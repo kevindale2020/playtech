@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/orderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:text="Order Number: 1"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderno"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:text="Order on: 2020-12-18"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorText"
+            android:text="Sample"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:text="Sample"
+            android:textColor="@color/colorText"
+            android:layout_alignTop="@id/total"/>
+
+        <ImageView
+            android:id="@+id/iconDetails"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/date"
+            android:clickable="true"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:text="@string/details"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+        android:id="@+id/iconCancel"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_toLeftOf="@id/iconDetails"
+        android:layout_alignBottom="@id/date"
+        android:clickable="true"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:text="@string/details"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/btnReceive"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toLeftOf="@id/iconDetails"
+            android:layout_alignTop="@id/iconDetails"
+            android:clickable="true"
+            android:text="@string/btnReceive"
+            android:textColor="@android:color/white"
+            android:src="@drawable/ic_check_circle_black_24dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

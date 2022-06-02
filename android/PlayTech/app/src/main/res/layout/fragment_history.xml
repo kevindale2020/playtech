@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.history.HistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLight"
+        android:orientation="vertical">
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/layout_list"
+        android:background="@color/colorLight"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textSize="16dp"
+        android:visibility="gone"/>
+</LinearLayout>

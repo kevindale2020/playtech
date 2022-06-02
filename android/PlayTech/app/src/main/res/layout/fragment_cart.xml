@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cart.CartFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_list"
+        android:background="@color/colorLight"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/value_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:layout_below="@id/divider"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/empty_msg"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/layout_list"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:textColor="@color/colorText"-->
+<!--        android:textSize="16dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:visibility="gone" />-->
+
+    <TextView
+        android:id="@+id/empty_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/layout_list"
+        android:background="@color/colorLight"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textSize="16dp"
+        android:visibility="gone"/>
+</RelativeLayout>
