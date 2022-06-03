@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:import url="header.jsp"/>
+<!-- content -->
 <div class="container">
 
 <div class="row justify-content-center">
